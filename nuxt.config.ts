@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [
-    '@nuxt/eslint',
+    //TODO: Review eslint rules for nuxt 3 and apollo graphql for avoid unexpected bugs and errors 
+    // '@nuxt/eslint',
     '@nuxtjs/apollo',
   ],
   runtimeConfig: {
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
       frontendUrl: process.env.FRONTEND_URL, 
     },
     // Variables access only on server side
-    graphqlUrl: process.env.API_KEY, 
+    graphqlUrl: process.env.GRAPHQL_URL, 
   },
   apollo: {
     authType: "Bearer",
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
     tokenStorage: "cookie",
     clients: {
       default: {
-        tokenName: "auth-token",
+        // tokenName: "auth-token",
         httpEndpoint: process.env.GRAPHQL_URL as string,
       },
     }
