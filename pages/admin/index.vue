@@ -3,9 +3,13 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line no-undef
+
 definePageMeta({
-  layout: 'admin', // Nombre del diseño personalizado
+  layout: 'admin' // Nombre del diseño personalizado
 });
+
+const ttesting = ref(1);
+console.log(ttesting);
+
 
 </script>

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     //TODO: Review eslint rules for nuxt 3 and apollo graphql for avoid unexpected bugs and errors 
-    // '@nuxt/eslint',
+    '@nuxt/eslint',
     '@nuxtjs/apollo',
   ],
   runtimeConfig: {
