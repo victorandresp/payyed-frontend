@@ -25,5 +25,11 @@ export default defineNuxtConfig({
         httpEndpoint: process.env.GRAPHQL_URL as string,
       },
     }
-  }
+  },
+  css: [
+    // CSS file in the project
+    '@/assets/css/main.css',
+    // SCSS file in the project
+    '@/assets/sass/main.scss'
+  ]
 })
