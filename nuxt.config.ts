@@ -2,11 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: [
-    //TODO: Review eslint rules for nuxt 3 and apollo graphql for avoid unexpected bugs and errors 
-    '@nuxt/eslint',
-    '@nuxtjs/apollo',
-  ],
+  modules: [//TODO: Review eslint rules for nuxt 3 and apollo graphql for avoid unexpected bugs and errors 
+  '@nuxt/eslint', '@nuxtjs/apollo', 'vuetify-nuxt-module'],
   runtimeConfig: {
     public: {
       // Variables access only on client side

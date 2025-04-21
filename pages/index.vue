@@ -5,6 +5,7 @@
         <div class="example-class">
             <p>Testing sass</p>
         </div>
+        <v-btn color="success">hola</v-btn>
     </div>
 </template>
 <script setup lang="ts">
