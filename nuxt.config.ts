@@ -35,5 +35,26 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     // SCSS file in the project
     '@/assets/sass/main.scss'
-  ]
+  ],
+  vuetify: {
+    vuetifyOptions: {
+      theme: {
+        themes: {
+          light: {
+            colors: {
+              primary:"#2dbe60"
+            },
+          },
+          dark: {
+            colors: {
+              primary:"#2dbe60"
+            },
+          }
+        }
+      }
+    }
+    
+  }
+
+  //#2dbe60
 })
