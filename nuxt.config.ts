@@ -4,6 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [//TODO: Review eslint rules for nuxt 3 and apollo graphql for avoid unexpected bugs and errors 
   '@nuxt/eslint', '@nuxtjs/apollo', 'vuetify-nuxt-module'],
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      ]
+    }
+  },
   runtimeConfig: {
     public: {
       // Variables access only on client side
