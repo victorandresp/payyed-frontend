@@ -1,7 +1,12 @@
 <template>
     <div>
-        <p>Default layout</p>
-        <slot />
+        <v-layout>
+            <CommonHeader/>
+            <v-main>
+                <slot />
+            </v-main>
+
+        </v-layout>
     </div>
     
 </template>
