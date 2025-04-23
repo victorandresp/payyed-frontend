@@ -1,6 +1,11 @@
 {
   "name": "payyed-frontend",
   "version": "0.0.1",
+  "author": {
+    "name": "Victor Andres",
+    "email": "victorandres.dev@gmail.com",
+    "url": "https://github.com/victorandresp"
+  },
   "private": true,
   "type": "module",
   "scripts": {
