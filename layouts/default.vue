@@ -5,8 +5,6 @@
             <v-main>
                 <slot />
             </v-main>
-
         </v-layout>
     </div>
-    
 </template>

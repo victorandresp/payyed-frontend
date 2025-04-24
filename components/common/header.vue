@@ -6,6 +6,7 @@ const menuItems = ref([
     { name: 'Fees'},
     { name: 'Help'},
 ])
+
 </script>
 
 <template>
@@ -13,7 +14,9 @@ const menuItems = ref([
         <v-row>
             <v-spacer/>
             <v-col cols="auto">
-                <v-img width="auto" src="/assets/images/payyed-logo.png"/>
+                <NuxtLink to="/">
+                    <v-img width="auto" src="/assets/images/payyed-logo.png"/>
+                </NuxtLink>
             </v-col>
             <v-col cols="6">
                 <template v-for="item in menuItems" :key="item.name">
