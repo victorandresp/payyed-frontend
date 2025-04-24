@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <p>Default Page</p>
-    </div>
+    <v-container fluid class="pa-0">
+        <CommonCarousel /> 
+    </v-container>
 </template>
 <script setup lang="ts">
     
