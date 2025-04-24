@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-
+  // TODO: SAVE IMAGES IN BBDD AND GET DYNAMICALLY AND TRY DO LAZY LOAD
 </script>
 
 <template>
