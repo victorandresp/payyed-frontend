@@ -2,7 +2,7 @@
 import { GET_CAROUSEL_IMAGES } from '~/graphql/queries/carousel.query';
 
 const { result: carouselImages, loading } = useQuery(GET_CAROUSEL_IMAGES)
-
+// TODO: ADD error handler global in nuxt.config and/or create function general for show toast.
 </script>
 
 <template>
