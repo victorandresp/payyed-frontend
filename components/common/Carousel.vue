@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-  // TODO: SAVE IMAGES IN BBDD AND GET DYNAMICALLY AND TRY DO LAZY LOAD
+import { GET_CAROUSEL_IMAGES } from '~/graphql/queries/carousel.query';
+
+const { result: carouselImages, loading } = useQuery(GET_CAROUSEL_IMAGES)
+
 </script>
 
 <template>
    <!-- TODO: MAKE CALCULE FOR HEIGHT 100vh - 64px (default value for v-app-bar) -->
-  <v-carousel height="94vh" show-arrows="hover" hide-delimiters> 
-    <v-carousel-item src="/assets/images/carousel/image-1.jpg" cover />
-
-    <v-carousel-item src="/assets/images/carousel/image-2.jpg" cover />
-
-    <v-carousel-item src="/assets/images/carousel/image-3.jpg" cover />
+  <v-carousel v-if="!loading && carouselImages.getCarouselImages.length > 0" height="94vh" show-arrows="hover" hide-delimiters> 
+    <template v-for="carousel in carouselImages.getCarouselImages" :key="carousel.path">
+      <v-carousel-item :src="carousel.path" cover />
+    </template>
   </v-carousel>
 </template>
 
