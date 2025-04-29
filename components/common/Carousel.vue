@@ -13,7 +13,23 @@ const { result: carouselImages, loading } = useQuery(GET_CAROUSEL_IMAGES)
         <div class="h-100 d-flex justify-center align-center gradient-common-carousel">
           <div :class="'w-50 '+`${carousel.orientation}`">
             <h1 class="text-white text-h2 font-weight-bold pb-3">{{ carousel.title }}</h1>
-            <h3 class="text-white text-h5 font-weight-light">{{  carousel.subtitle }}</h3>
+            <h3 class="text-white text-h5 font-weight-light">{{ carousel.subtitle }}</h3>
+            <div :class="'pt-5 '+`${carousel.orientation}`">
+              <v-btn 
+                color="primary" 
+                variant="flat" 
+                size="large" 
+                class="mr-3">
+                {{ carousel.firstButton}}
+              </v-btn>
+              <v-btn 
+                color="white" 
+                variant="plain" 
+                prepend-icon="mdi-play"
+                size="large">
+                {{ carousel.secondButton }}
+              </v-btn>
+            </div>
           </div>
         </div>
       </v-carousel-item>
