@@ -10,7 +10,7 @@ const menuItems = ref([
 </script>
 
 <template>
-    <v-app-bar>
+    <v-app-bar height="88">
         <v-row>
             <v-spacer/>
             <v-col cols="auto">
