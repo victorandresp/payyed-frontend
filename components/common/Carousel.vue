@@ -6,8 +6,7 @@ const { result: carouselImages, loading } = useQuery(GET_CAROUSEL_IMAGES)
 </script>
 
 <template>
-   <!-- TODO: MAKE CALCULE FOR HEIGHT 100vh - 64px (default value for v-app-bar) -->
-  <v-carousel v-if="!loading && carouselImages.getCarouselImages.length > 0" height="94vh" show-arrows="hover" hide-delimiters> 
+  <v-carousel v-if="!loading && carouselImages.getCarouselImages.length > 0" class="common-carousel" show-arrows="hover" hide-delimiters> 
     <template v-for="carousel in carouselImages.getCarouselImages" :key="carousel.path">
       <v-carousel-item  :src="carousel.path" cover>
         <div class="h-100 d-flex justify-center align-center gradient-common-carousel">
@@ -38,6 +37,9 @@ const { result: carouselImages, loading } = useQuery(GET_CAROUSEL_IMAGES)
 </template>
 
 <style lang="scss">
+.common-carousel{
+  height: calc(100vh - 88px) !important;
+}
 .gradient-common-carousel{
   background: linear-gradient(45deg, #00000017, #0000007a);
 }
