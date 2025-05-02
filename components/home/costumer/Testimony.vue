@@ -34,9 +34,13 @@
 </script>
 <template>
     <div>
-        <template v-for="testimony in testimonials" :key="testimony.name">
-            <HomeCostumerCard :testimony="testimony" />
-        </template>
+        <v-carousel width="1000">
+            <template v-for="testimony in testimonials" :key="testimony.name">
+                <v-carousel-item width="400">
+                    <HomeCostumerCard :testimony="testimony" />
+                </v-carousel-item>
+            </template>
+        </v-carousel>
     </div>
 </template>
 <style lang="scss">
