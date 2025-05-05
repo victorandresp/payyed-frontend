@@ -30,7 +30,7 @@
         name: "Jessica Davis",
         from: "Data Analyst at Pioneer Analytics" 
     },
- ]
+ ];
 </script>
 <template>
     <div>
