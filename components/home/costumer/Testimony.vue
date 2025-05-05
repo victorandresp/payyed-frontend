@@ -1,5 +1,10 @@
 <script setup lang="ts">
- const testimonials = [
+type TestimonialsType = {
+    text: string
+    name: string
+    from: string
+}
+ const testimonials : TestimonialsType[] = [
     {
         text: `It's a real good idea to manage your money by payyed. The rates are fair and you can carry out the transactions without worrying!`,
         name: "John Smith", 
@@ -31,13 +36,28 @@
         from: "Data Analyst at Pioneer Analytics" 
     },
  ];
+
+ const orderTestimonials = (array: TestimonialsType[]) => {
+    if (array.length % 2 !== 0) return []
+
+    const matrix = [];
+    for (let i = 0; i < array.length; i += 2) {
+        matrix.push([array[i], array[i + 1]]);
+    }
+
+    return matrix as TestimonialsType[][]
+ }
+//  console.log();
+ 
 </script>
 <template>
     <div>
         <v-carousel width="1000">
-            <template v-for="testimony in testimonials" :key="testimony.name">
+            <template v-for="testimony in orderTestimonials(testimonials)" :key="testimony.name">
                 <v-carousel-item width="400">
-                    <HomeCostumerCard :testimony="testimony" />
+                    <div class="d-flex w-100">
+                        <HomeCostumerCard :testimony="testimony" />
+                    </div>
                 </v-carousel-item>
             </template>
         </v-carousel>
