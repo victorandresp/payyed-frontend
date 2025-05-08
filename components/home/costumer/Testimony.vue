@@ -51,13 +51,16 @@ type TestimonialsType = {
  
 </script>
 <template>
-    <div>
-        <v-carousel width="1000">
+    <div class="d-flex justify-center align-center">
+        <v-carousel class="w-75">
             <template v-for="testimony in orderTestimonials(testimonials)" :key="testimony.name">
-                <v-carousel-item width="400">
-                    <div class="d-flex w-100">
-                        <HomeCostumerCard :testimony="testimony" />
-                    </div>
+                <v-carousel-item class="d-flex align-center">
+                    <v-row class="ma-0" justify="center">
+                        <div class="d-flex w-75">
+                            <HomeCostumerCard v-if="testimony[0]" class="mr-5"  :testimony="testimony[0]" />
+                            <HomeCostumerCard v-if="testimony[0]" :testimony="testimony[1]" />
+                        </div>
+                    </v-row>
                 </v-carousel-item>
             </template>
         </v-carousel>
