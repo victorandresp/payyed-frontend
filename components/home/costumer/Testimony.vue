@@ -47,7 +47,6 @@ type TestimonialsType = {
 
     return matrix as TestimonialsType[][]
  }
-//  console.log();
  
 </script>
 <template>
