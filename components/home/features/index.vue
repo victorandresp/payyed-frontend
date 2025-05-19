@@ -29,7 +29,7 @@ const features = [
 
 <template>
     <v-container class="py-14">
-        <v-row>
+        <v-row class="mb-5">
             <v-col class="text-center" cols="12">
                 <h2 class="text-h4 font-weight-bold">Why should you choose Payyed?</h2>
                 <p class="text-h6 font-weight-thin">Here’s Top 4 reasons why using a Payyed account for manage your money.</p>
@@ -39,7 +39,7 @@ const features = [
             <v-col cols="12">
                 <v-row justify="center">
                     <template v-for="feature in features" :key="feature.link">
-                        <v-col cols="2">
+                        <v-col cols="3">
                             <HomeFeaturesCard :feature="feature"/>
                         </v-col>
                     </template>
