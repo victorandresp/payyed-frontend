@@ -44,24 +44,24 @@ type TestimonialsType = {
     for (let i = 0; i < array.length; i += 2) {
         matrix.push([array[i], array[i + 1]]);
     }
-
+    
     return matrix as TestimonialsType[][]
  }
  
 </script>
 <template>
-    <div class="d-flex justify-center align-center">
-        <v-carousel class="w-75">
-            <template v-for="testimony in orderTestimonials(testimonials)" :key="testimony.name">
-                <v-carousel-item class="d-flex align-center">
+    <div class="d-flex justify-center">
+        <v-carousel class="w-75" hide-delimiters>
+            <template v-for="(testimony, i) in orderTestimonials(testimonials)" :key="i">
+                <v-carousel-item>
                     <v-row class="ma-0" justify="center">
                         <div class="d-flex w-75">
-                            <HomeCostumerCard v-if="testimony[0]" class="mr-5"  :testimony="testimony[0]" />
-                            <HomeCostumerCard v-if="testimony[0]" :testimony="testimony[1]" />
+                            <HomeCostumerCard v-if="testimony[0]" class="mr-5" :testimony="testimony[0]" />
+                            <HomeCostumerCard v-if="testimony[1]" :testimony="testimony[1]" />
                         </div>
                     </v-row>
                 </v-carousel-item>
-            </template>
+            </template>    
         </v-carousel>
     </div>
 </template>
