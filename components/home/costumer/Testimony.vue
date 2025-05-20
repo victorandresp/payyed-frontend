@@ -50,15 +50,17 @@ type TestimonialsType = {
  
 </script>
 <template>
-    <div class="d-flex justify-center">
-        <v-carousel class="w-75" hide-delimiters>
+    <div class="d-flex justify-center pb-6">
+        <v-carousel height="auto" class="w-75" hide-delimiters>
             <template v-for="(testimony, i) in orderTestimonials(testimonials)" :key="i">
                 <v-carousel-item>
                     <v-row class="ma-0" justify="center">
-                        <div class="d-flex w-75">
-                            <HomeCostumerCard v-if="testimony[0]" class="mr-5" :testimony="testimony[0]" />
-                            <HomeCostumerCard v-if="testimony[1]" :testimony="testimony[1]" />
-                        </div>
+                       <v-col cols="5">
+                           <HomeCostumerCard v-if="testimony[0]" class="mr-5" :testimony="testimony[0]" />
+                        </v-col>
+                        <v-col cols="5">
+                           <HomeCostumerCard v-if="testimony[1]" :testimony="testimony[1]" />
+                       </v-col>
                     </v-row>
                 </v-carousel-item>
             </template>    
