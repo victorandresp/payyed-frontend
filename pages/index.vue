@@ -3,6 +3,7 @@
         <CommonCarousel /> 
         <HomeFeatures />
         <HomeCostumerTestimony />
+        <HomeCostumerSupport />
         <v-sheet class="mt-7 w-100 h-30 pa-12" color="grey-lighten-3" />
     </v-container>
 </template>
