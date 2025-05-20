@@ -50,7 +50,7 @@ type TestimonialsType = {
  
 </script>
 <template>
-    <div class="d-flex justify-center pb-6">
+    <div class="d-flex justify-center pb-15 pt-5">
         <v-carousel height="auto" class="w-75" hide-delimiters>
             <template v-for="(testimony, i) in orderTestimonials(testimonials)" :key="i">
                 <v-carousel-item>
