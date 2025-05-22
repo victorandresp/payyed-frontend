@@ -1,10 +1,6 @@
 <script setup lang="ts">
-type TestimonialsType = {
-    text: string
-    name: string
-    from: string
-}
- const testimonials : TestimonialsType[] = [
+
+ const testimonials = [
     {
         text: `It's a real good idea to manage your money by payyed. The rates are fair and you can carry out the transactions without worrying!`,
         name: "John Smith", 
@@ -37,34 +33,14 @@ type TestimonialsType = {
     },
  ];
 
- const orderTestimonials = (array: TestimonialsType[]) => {
-    if (array.length % 2 !== 0) return []
-
-    const matrix = [];
-    for (let i = 0; i < array.length; i += 2) {
-        matrix.push([array[i], array[i + 1]]);
-    }
-    
-    return matrix as TestimonialsType[][]
- }
- 
 </script>
 <template>
     <div class="d-flex justify-center pb-15 pt-5">
-        <v-carousel height="auto" class="w-75" hide-delimiters>
-            <template v-for="(testimony, i) in orderTestimonials(testimonials)" :key="i">
-                <v-carousel-item>
-                    <v-row class="ma-0" justify="center">
-                       <v-col cols="5">
-                           <HomeCostumerCard v-if="testimony[0]" class="mr-5" :testimony="testimony[0]" />
-                        </v-col>
-                        <v-col cols="5">
-                           <HomeCostumerCard v-if="testimony[1]" :testimony="testimony[1]" />
-                       </v-col>
-                    </v-row>
-                </v-carousel-item>
-            </template>    
-        </v-carousel>
+        <div class="text-center d-block">
+            <h4 class="text-h4 font-weight-bold mb-3">What people are saying about Payyed</h4>
+            <p class="text-subtitle-1 mb-2">A payments experience people love to talk about.</p>
+        </div>
+        <HomeCostumerCarousel :testimonials="testimonials"/>
     </div>
 </template>
 <style lang="scss">
