@@ -4,6 +4,7 @@
             <CommonHeader/>
             <v-main>
                 <slot />
+                <CommonFooter/>
             </v-main>
         </v-layout>
     </div>
