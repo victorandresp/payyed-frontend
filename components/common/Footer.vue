@@ -5,7 +5,13 @@ const links = [
   { route: '/help', name: 'Help'},
   { route: '/careers', name: 'Affiliate'},
   { route: '/fees', name: 'Fees'},
-]
+];
+
+const secondaryLinks = [
+  { route: '/security', name: 'Security'},
+  { route: '/terms', name: 'Terms'},
+  { route: '/privacy', name: 'Privacy'}
+];
 
 const currentYear = () =>{
   const date = new Date();
@@ -14,7 +20,7 @@ const currentYear = () =>{
 
 </script>
 <template>
- <footer class="pa-10">
+ <footer class="pa-12">
   <v-row justify="space-between">
     <v-col cols="auto">
       <div class="d-flex">
@@ -41,7 +47,11 @@ const currentYear = () =>{
       </p>
     </v-col>
     <v-col cols="auto">
-      test
+      <template v-for="link in secondaryLinks" :key="link.route">
+          <NuxtLink class="text-grey text-body-1 text-decoration-none mr-4" :to="link.route">
+            {{ link.name }}
+          </NuxtLink>
+        </template>
     </v-col>
   </v-row>
 </footer>
