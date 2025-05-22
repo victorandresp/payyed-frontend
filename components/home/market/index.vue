@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="w-100 bg-blue-grey-lighten-4 text-center pa-5">
+  <div class="w-100 bg-blue-grey-lighten-5 text-center pa-10">
     <h4 class="text-h4 font-weight-bold mb-2">Get the app</h4>
     <p class="text-subtitle-1">Download our app for the fastest, most convenient way to send & get Payment.</p>
     <div class="d-inline-flex ga-6 mt-4">

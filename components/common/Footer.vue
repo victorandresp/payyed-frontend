@@ -7,21 +7,40 @@ const links = [
   { route: '/fees', name: 'Fees'},
 ]
 
+const currentYear = () =>{
+  const date = new Date();
+  return date.getFullYear();
+}
+
 </script>
 <template>
- <v-footer class="pa-10">
+ <footer class="pa-10">
   <v-row justify="space-between">
-    <v-col>
+    <v-col cols="auto">
       <div class="d-flex">
         <template v-for="link in links" :key="link.route">
-          <NuxtLink class="text-black text-decoration-none ml-4" :to="link.route">
+          <NuxtLink class="text-black text-decoration-none mr-4" :to="link.route">
             {{ link.name }}
           </NuxtLink>
-
         </template>
       </div>
     </v-col>
+    <v-col cols="auto">
+       <p>Link</p>
+    </v-col>
   </v-row>
- </v-footer>
+  <v-row class="border-t-thin" justify="space-between">
+    <v-col cols="auto">
+      <p class="text-gray text-caption"> Copyright © {{ currentYear ()}} <span class="text-primary">Payyed</span>. All Rights Reserved.</p>
+      <p class="text-gray text-caption"> Developed by 
+        <a href="https://github.com/victorandresp" style="color: black;" target="_blank">Victor Andrés</a> 
+        with Love <span class="text-primary text-body-1">♥</span>
+      </p>
+    </v-col>
+    <v-col cols="auto">
+      test
+    </v-col>
+  </v-row>
+</footer>
 </template>
 <style></style>
