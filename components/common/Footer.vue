@@ -26,7 +26,10 @@ const currentYear = () =>{
       </div>
     </v-col>
     <v-col cols="auto">
-       <p>Link</p>
+       <v-btn icon="mdi-facebook" size="small" variant="plain" />
+       <v-btn icon="mdi-twitter" size="x-small" variant="plain" />
+       <v-btn icon="mdi-google" size="x-small" variant="plain" />
+       <v-btn icon="mdi-youtube" size="x-small" variant="plain" />
     </v-col>
   </v-row>
   <v-row class="border-t-thin" justify="space-between">
