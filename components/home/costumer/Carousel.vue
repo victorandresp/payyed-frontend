@@ -23,7 +23,7 @@ const orderTestimonials = (array: TestimonialsType[]) => {
 </script>
 <template>
   <div>
-    <v-carousel height="auto" class="w-75" hide-delimiters>
+    <v-carousel height="auto" class="w-75 mx-auto" hide-delimiters>
             <template v-for="(testimony, i) in orderTestimonials(testimonials)" :key="i">
                 <v-carousel-item>
                     <v-row class="ma-0" justify="center">

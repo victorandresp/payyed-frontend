@@ -35,10 +35,10 @@
 
 </script>
 <template>
-    <div class="d-flex justify-center pb-15 pt-5">
-        <div class="text-center d-block">
+    <div class="pb-15 pt-5">
+        <div class="text-center mb-7">
             <h4 class="text-h4 font-weight-bold mb-3">What people are saying about Payyed</h4>
-            <p class="text-subtitle-1 mb-2">A payments experience people love to talk about.</p>
+            <p class="text-subtitle-1">A payments experience people love to talk about.</p>
         </div>
         <HomeCostumerCarousel :testimonials="testimonials"/>
     </div>
