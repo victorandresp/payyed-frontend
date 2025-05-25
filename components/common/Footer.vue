@@ -13,7 +13,7 @@ const secondaryLinks = [
   { route: '/privacy', name: 'Privacy'}
 ];
 
-const currentYear = () =>{
+const currentYear = () => {
   const date = new Date();
   return date.getFullYear();
 }
