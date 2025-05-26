@@ -43,5 +43,3 @@
         <HomeCostumerCarousel :testimonials="testimonials"/>
     </div>
 </template>
-<style lang="scss">
-</style>

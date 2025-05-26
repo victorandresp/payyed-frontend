@@ -15,5 +15,3 @@ defineProps({
       <p class="text-caption">{{ testimony.from }}</p>
   </v-card>
 </template>
-<style lang="scss">
-</style>

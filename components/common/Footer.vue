@@ -56,4 +56,3 @@ const currentYear = () => {
   </v-row>
 </footer>
 </template>
-<style></style>

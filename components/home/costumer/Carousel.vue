@@ -39,7 +39,3 @@ const orderTestimonials = (array: TestimonialsType[]) => {
         </v-carousel>
   </div>
 </template>
-
-<style>
-
-</style>
