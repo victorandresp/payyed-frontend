@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 </script>
 <template>
-    <h1>Side Banner</h1>
+    <div class="w-100 h-100">
+        <v-img class="w-100" height="100%" cover src="/public/carousel/image-3.jpg"/>
+    </div>
 </template>
