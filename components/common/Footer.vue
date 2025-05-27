@@ -25,7 +25,7 @@ const currentYear = () => {
     <v-col cols="auto">
       <div class="d-flex">
         <template v-for="link in links" :key="link.route">
-          <NuxtLink class="text-black text-decoration-none mr-4" :to="link.route">
+          <NuxtLink class="text-black text-decoration-none mr-4">
             {{ link.name }}
           </NuxtLink>
         </template>
@@ -48,7 +48,7 @@ const currentYear = () => {
     </v-col>
     <v-col cols="auto">
       <template v-for="link in secondaryLinks" :key="link.route">
-          <NuxtLink class="text-grey text-body-1 text-decoration-none mr-4" :to="link.route">
+          <NuxtLink class="text-grey text-body-1 text-decoration-none mr-4">
             {{ link.name }}
           </NuxtLink>
         </template>
