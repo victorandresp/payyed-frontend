@@ -2,7 +2,6 @@
 definePageMeta({
   layout: 'auth'
 })
-
 </script>
 <template>
   <v-container class="pa-0" fluid>
