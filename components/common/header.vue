@@ -24,7 +24,7 @@ const menuItems = ref([
                 </template>
             </v-col>
             <v-col cols="2">
-                <v-btn to="/auth/login.vue">login</v-btn>
+                <v-btn to="/auth/login">login</v-btn>
                 <v-btn color="primary" variant="flat">sign up</v-btn>
             </v-col>
             <v-spacer/>
