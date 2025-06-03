@@ -2,6 +2,11 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+# Trello Task Board
+
+Here i got all tasks/todos for develop the app
+(https://trello.com/b/O8MyaxE7/payyed)
+
 ## Setup
 
 Make sure to install dependencies:
