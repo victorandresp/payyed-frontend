@@ -6,11 +6,11 @@ definePageMeta({
 <template>
     <div>
       <v-row>
-        <v-col cols="6" class="">
+        <v-col cols="6" class="pb-0">
           <AuthSideBanner/>
         </v-col>
-        <v-col cols="6" class="">
-          <div class="mt-10">Login</div>
+        <v-col cols="6" class="pb-0">
+          <!-- <div class="mt-10">Login</div> -->
         </v-col>
       </v-row>
     </div>
