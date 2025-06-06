@@ -14,8 +14,6 @@
     </div>
 </template>
 <style lang="scss">
-
-
 .login-background-image{
     width: 100%;
     height: 100vh;
