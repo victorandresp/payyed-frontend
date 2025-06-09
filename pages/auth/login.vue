@@ -7,10 +7,13 @@ definePageMeta({
     <div>
       <v-row>
         <v-col cols="6" class="pb-0">
-          <AuthSideBanner/>
+          <AuthSideBanner 
+           title="Welcome back!" 
+           subtitle="We are glad to see you again! Instant deposits, withdrawals & payouts trusted by millions worldwide." 
+           />
         </v-col>
         <v-col cols="6" class="pb-0">
-          <!-- <div class="mt-10">Login</div> -->
+          <AuthLogin/>
         </v-col>
       </v-row>
     </div>
